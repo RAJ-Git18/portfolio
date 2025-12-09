@@ -28,6 +28,7 @@ const Navbar = () => {
         {/* Logo */}
         <a href="#home" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
           <img src="/logo.svg" alt="R Logo" style={{ width: '40px', height: '40px' }} />
+          <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>Raj</span>
         </a>
 
         {/* Desktop Menu */}
