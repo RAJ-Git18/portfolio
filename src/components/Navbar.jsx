@@ -22,24 +22,18 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300`} style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      width: '100%',
-      zIndex: 1000,
-      transition: 'all 0.3s ease',
-      background: scrolled ? 'rgba(17, 24, 39, 0.9)' : 'transparent',
-      backdropFilter: scrolled ? 'blur(10px)' : 'none',
-      padding: scrolled ? '1rem 0' : '2rem 0',
-      borderBottom: scrolled ? '1px solid var(--glass-border)' : 'none'
-    }}>
-      <div className="container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <nav className={`navbar ${scrolled ? 'scrolled' : 'transparent'}`}>
+      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+
+        {/* Logo */}
+        <a href="#home" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
+          <img src="/logo.svg" alt="R Logo" style={{ width: '40px', height: '40px' }} />
+        </a>
 
         {/* Desktop Menu */}
         <div className="desktop-menu" style={{ display: 'flex', gap: '3rem', alignItems: 'center' }}>
           {navLinks.map((link) => (
-            <a key={link.name} href={link.to} style={{ fontSize: '1rem', fontWeight: '500', color: '#D1D5DB', position: 'relative' }} className="nav-link">
+            <a key={link.name} href={link.to} className="nav-link">
               {link.name}
             </a>
           ))}

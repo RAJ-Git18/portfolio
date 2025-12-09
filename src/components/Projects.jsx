@@ -59,7 +59,7 @@ const Projects = () => {
                 >
                     <h2 className="section-title">Featured Projects</h2>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                    <div className="grid-auto-fit">
                         {projects.map((project, index) => (
                             <motion.div
                                 key={index}
