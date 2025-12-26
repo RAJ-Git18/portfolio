@@ -8,43 +8,43 @@ const Projects = () => {
             title: 'GEONUSAF (Ongoing)',
             description: 'Research project focused on Geospatial analysis for Urban Sustainability and Forecasting. Integrating satellite and environmental datasets to analyze urban expansion and green space distribution.',
             tags: ['Research', 'Geospatial Analysis', 'Sustainability'],
-            links: { github: '#' }
+            // links: { github: '#' }
         },
         {
             title: 'AI-Powered Document RAG & Booking Assistant',
             description: 'Production-ready FastAPI backend that ingests PDF/text documents, generates embeddings with SentenceTransformers, and uses Pinecone for semantic retrieval. Features intent detection and PostgreSQL booking storage.',
             tags: ['FastAPI', 'Pinecone', 'RAG', 'PostgreSQL', 'Redis'],
-            links: { github: '#' }
+            links: { github: 'https://github.com/RAJ-Git18/AI-Powered-Document-RAG-Booking-System' }
         },
         {
             title: 'Life Expectancy Prediction',
             description: 'Machine learning pipeline to predict life expectancy based on socio-economic data. Applied multiple models (Linear, Ridge, Lasso, Random Forest, XGBoost) to determine the best predictor.',
             tags: ['Machine Learning', 'Python', 'XGBoost', 'Data Analysis'],
-            links: { github: '#' }
+            links: { github: 'https://github.com/RAJ-Git18/life_expectancy' }
         },
         {
             title: 'Multi-Domain RAG AI Assistant',
             description: 'Intelligent FastAPI microservice using RAG to answer queries across travel and AI development domains. Implemented smart triage system and LangChain learning paths.',
             tags: ['FastAPI', 'LangChain', 'RAG', 'AI'],
-            links: { github: '#' }
+            links: { github: 'https://github.com/RAJ-Git18/rag_fusion' }
         },
         {
             title: 'PharmaLife – Medicine eCommerce Platform',
             description: 'Full-stack web app for buying and selling medicines online with authentication, cart, and order tracking.',
             tags: ['Django', 'Next.js', 'PostgreSQL'],
-            links: { github: '#' }
+            links: { github: 'https://github.com/RAJ-Git18/pharmalife' }
         },
         {
             title: 'Interactive Mental Health Chatbot',
             description: 'Sentiment-aware chatbot using GPT-2 and NLP techniques to interact with users and assess mental well-being.',
             tags: ['GPT-2', 'NLP', 'Python'],
-            links: { github: '#' }
+            links: { github: 'https://github.com/RAJ-Git18/Interactive-Chatbot' }
         },
         {
             title: 'Gadget eCommerce Website',
             description: 'Gadget marketplace with full cart and admin features.',
             tags: ['Next.js', 'Redux Toolkit', 'Django REST API', 'PostgreSQL'],
-            links: { github: '#' }
+            links: { github: 'https://github.com/RAJ-Git18/gadget_ecommerce' }
         }
     ];
 
