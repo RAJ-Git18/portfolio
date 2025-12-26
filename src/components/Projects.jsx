@@ -86,9 +86,11 @@ const Projects = () => {
                                 </div>
 
                                 <div style={{ display: 'flex', gap: '1rem' }}>
-                                    <a href={project.links.github} className="btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '0.5rem', borderRadius: '8px' }}>
-                                        <FaGithub /> Code
-                                    </a>
+                                    {project.links?.github && (
+                                        <a href={project.links.github} className="btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '0.5rem', borderRadius: '8px' }}>
+                                            <FaGithub /> Code
+                                        </a>
+                                    )}
                                 </div>
                             </motion.div>
                         ))}
