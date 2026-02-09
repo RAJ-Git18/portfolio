@@ -6,44 +6,50 @@ const Projects = () => {
     const projects = [
         {
             title: 'GEONUSAF (Ongoing)',
-            description: 'Research project focused on Geospatial analysis for Urban Sustainability and Forecasting. Integrating satellite and environmental datasets to analyze urban expansion and green space distribution.',
-            tags: ['Research', 'Geospatial Analysis', 'Sustainability'],
+            description: 'Urban sustainability research integrating satellite and urban data to model urban growth, green space distribution, and infrastructure patterns for smart city sustainability forecasting.',
+            tags: ['Research', 'Geospatial Analysis', 'Sustainability', 'Smart City'],
             // links: { github: '#' }
         },
         {
-            title: 'AI-Powered Document RAG & Booking Assistant',
-            description: 'Production-ready FastAPI backend that ingests PDF/text documents, generates embeddings with SentenceTransformers, and uses Pinecone for semantic retrieval. Features intent detection and PostgreSQL booking storage.',
-            tags: ['FastAPI', 'Pinecone', 'RAG', 'PostgreSQL', 'Redis'],
-            links: { github: 'https://github.com/RAJ-Git18/AI-Powered-Document-RAG-Booking-System' }
+            title: 'MedLORA',
+            description: 'Developed a LoRA-augmented ConvNeXtV2 medical image classifier for endoscopy datasets namely (Kvasir-Capsule, GastroVision), improving performance over baseline CNNs and hybrid architectures with compute-efficient fine-tuning.',
+            tags: ['Deep Learning', 'Computer Vision', 'Medical AI', 'LoRA', 'ConvNeXtV2'],
+            // links: { github: '#' }
+        },
+        {
+            title: 'Agentic Tour Planner',
+            description: 'Built a stateful LangGraph and FastAPI service for automated tour planning and policy RAG. Orchestrated intent-based routing with Gemini/Pydantic to manage structured data retrieval from Pinecone (with Cross-Encoder reranking) and PostgreSQL for user profiles and booking records. Integrated Redis for multi-turn chat memory and secure JWT-based authentication.',
+            tags: ['LangGraph', 'FastAPI', 'RAG', 'Pinecone', 'Gemini', 'Redis'],
+            links: { github: 'https://github.com/RAJ-Git18/agentic-tour-planner' }
+        },
+        {
+            title: 'NepaliSentimentML',
+            description: 'A classical machine learning project that performs sentiment classification on Nepali text using SentenceTransformer embeddings and classical ML models such as XGBoost and Logistic Regression. This consist of a fastapi endpoint to analyze the sentiment of the user on the basis of the given text in nepali.',
+            tags: ['Machine Learning', 'NLP', 'FastAPI', 'XGBoost', 'SentenceTransformers'],
+            links: { github: 'https://github.com/RAJ-Git18/NepaliSentimentML' }
         },
         {
             title: 'Life Expectancy Prediction',
-            description: 'Machine learning pipeline to predict life expectancy based on socio-economic data. Applied multiple models (Linear, Ridge, Lasso, Random Forest, XGBoost) to determine the best predictor.',
+            description: 'Built a full ML pipeline using global socio-economic data. Performed preprocessing, feature analysis, and applied Linear, Ridge, Lasso, RF, and XGBoost to identify top predictors and optimize regression performance.',
             tags: ['Machine Learning', 'Python', 'XGBoost', 'Data Analysis'],
             links: { github: 'https://github.com/RAJ-Git18/life_expectancy' }
         },
         {
             title: 'Multi-Domain RAG AI Assistant',
-            description: 'Intelligent FastAPI microservice using RAG to answer queries across travel and AI development domains. Implemented smart triage system and LangChain learning paths.',
-            tags: ['FastAPI', 'LangChain', 'RAG', 'AI'],
-            links: { github: 'https://github.com/RAJ-Git18/rag_fusion' }
-        },
-        {
-            title: 'PharmaLife – Medicine eCommerce Platform',
-            description: 'Full-stack web app for buying and selling medicines online with authentication, cart, and order tracking.',
-            tags: ['Django', 'Next.js', 'PostgreSQL'],
-            links: { github: 'https://github.com/RAJ-Git18/pharmalife' }
+            description: 'Created a FastAPI microservice using RAG for travel and AI development queries. Integrated vector search, similarity-based pipeline selection, and structured JSON outputs for dynamic, domain-aware responses.',
+            tags: ['FastAPI', 'RAG', 'AI', 'Vector Search'],
+            links: { github: 'https://github.com/RAJ-Git18/AI-Powered-Document-RAG-Booking-System' }
         },
         {
             title: 'Interactive Mental Health Chatbot',
-            description: 'Sentiment-aware chatbot using GPT-2 and NLP techniques to interact with users and assess mental well-being.',
-            tags: ['GPT-2', 'NLP', 'Python'],
+            description: 'Implemented a sentiment-aware GPT-2 chatbot to analyze user mood and provide supportive conversational responses.',
+            tags: ['GPT-2', 'NLP', 'Python', 'Chatbot'],
             links: { github: 'https://github.com/RAJ-Git18/Interactive-Chatbot' }
         },
         {
-            title: 'Gadget eCommerce Website',
-            description: 'Gadget marketplace with full cart and admin features.',
-            tags: ['Next.js', 'Redux Toolkit', 'Django REST API', 'PostgreSQL'],
+            title: 'Gadget & Pharmalife eCommerce Website',
+            description: 'Developed dual e-commerce platforms using Next.js, Redux Toolkit, Django REST, and PostgreSQL with full cart, authentication, and admin dashboards.',
+            tags: ['Next.js', 'Redux Toolkit', 'Django REST', 'PostgreSQL'],
             links: { github: 'https://github.com/RAJ-Git18/gadget_ecommerce' }
         }
     ];
