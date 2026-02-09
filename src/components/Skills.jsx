@@ -1,23 +1,48 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaTools, FaBrain } from 'react-icons/fa';
+import { FaCode, FaBrain, FaRobot, FaDatabase, FaCogs, FaRocket, FaStar, FaUsers } from 'react-icons/fa';
 
 const Skills = () => {
     const skills = [
         {
-            category: 'Languages',
+            category: 'Languages & Frameworks',
             icon: <FaCode />,
-            items: ['Python', 'JavaScript', 'C', 'C++', 'SQL', 'Java']
+            items: ['Python', 'JavaScript', 'C', 'C++', 'Shell scripting', 'SQL', 'FastAPI', 'Next.js', 'Django']
         },
         {
-            category: 'Frameworks & Tools',
-            icon: <FaTools />,
-            items: ['Django', 'Flask', 'React', 'Next.js', 'Docker', 'Git', 'Redis']
-        },
-        {
-            category: 'ML Libraries & Concepts',
+            category: 'ML/DL Stack',
             icon: <FaBrain />,
-            items: ['scikit-learn', 'pandas', 'NumPy', 'matplotlib', 'seaborn', 'XGBoost', 'Supervised Learning', 'NLP']
+            items: ['PyTorch', 'TensorFlow', 'Transformers', 'Huggingface', 'Scikit-learn', 'Pandas', 'NumPy']
+        },
+        {
+            category: 'NLP',
+            icon: <FaRobot />,
+            items: ['Fine-tuning (LoRA)', 'Agentic Workflows (LangChain/LangGraph)', 'RAG Pipelines', 'Text Analytics', 'Cross-Encoder Reranking']
+        },
+        {
+            category: 'Data Systems',
+            icon: <FaDatabase />,
+            items: ['Pinecone', 'Qdrant', 'PostgreSQL', 'Redis', 'SQLAlchemy']
+        },
+        {
+            category: 'ML Infrastructure & MLOps',
+            icon: <FaCogs />,
+            items: ['Docker', 'CI/CD pipelines', 'MLOps Practices']
+        },
+        {
+            category: 'Deployment Tools',
+            icon: <FaRocket />,
+            items: ['Streamlit', 'Git', 'Postman', 'Jupyter', 'VS Code']
+        },
+        {
+            category: 'Specializations',
+            icon: <FaStar />,
+            items: ['NLP', 'LLM Systems', 'RAG/Agentic Architectures', 'Computer Vision', 'Full-Stack Development']
+        },
+        {
+            category: 'Soft Skills',
+            icon: <FaUsers />,
+            items: ['Communication', 'Problem Solving', 'Teamwork', 'Quick Learning', 'Research-Oriented']
         }
     ];
 
